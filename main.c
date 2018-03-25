@@ -88,10 +88,7 @@ void MemorizeBestSolutions()
         }
     }
 }
-void findGlobalBest()
-{
 
-}
 int main()
 {
     srand(time(NULL));
