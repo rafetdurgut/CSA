@@ -114,8 +114,11 @@ int main()
             if(r>AP)
             {
                 //Update From Memory
-              for(p=0;p<PD;p++)
-                 xNew[i][p] = Crows[i][p]+FL*r*(SolutionMemory[random_crows[i]][p]-Crows[i][p]);
+               for(p=0;p<PD;p++)
+              {
+                  r = ( (double)rand() / ((double)(RAND_MAX)+(double)(1)) );
+                  xNew[i][p] = Crows[i][p]+FL*r*(SolutionMemory[random_crows[i]][p]-Crows[i][p]);
+              }
             }
             else{
                 for(p=0;p<PD;p++)
